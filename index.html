@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+  <title>Portfólio Pedro Azevedo</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav-bar">
+      <a href="/" class="logo">Pedro Azevedo</a>
+      <ul class="menu-itens">
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#formulario">Formulário</a></li>
+      </ul>
+    </nav>
+  </header>
+  <hr style="background: rgb(255, 255, 255); width: 100%; height: 1px" />
+
+  <main>
+    <section class="container">
+
+      <section class="left">
+        <h1 class="inicio-titulo">Pedro Azevedo</h1>
+        <h4 class="inicio-subtitulo">Desenvolvedor</h4>
+        <p class="inicio-texto">Olá! Sou um estudante de Ciência da Computação com foco em frontend.</p>
+      </section>
+
+      <section class="right">
+        <img src="assets/img/eu.png" alt="Minha foto" class="img-perfil" />
+      </section>
+
+    </section>
+
+    <section class="sobre" id="sobre">
+      <h2 class="titulo">Sobre mim</h2>
+      <p class="sobre-texto">
+        Meu primeiro contato com a programação ocorreu no início de 2023, quando iniciei um curso pelo YouTube. Após um mês de estudo, descobri meu interesse pelo desenvolvimento web, especialmente com HTML e CSS.
+      </p>
+      <h3 class="sobre-texto">Graduação:</h3>
+      <p class="sobre-texto sobre-graduacao">Ciência da Computação (2024-2028) - UFBA</p>
+    </section>
+
+    <section class="habilidades" id="habilidades">
+      <h2 class="titulo">Habilidades</h2>
+
+      <div class="container-cards">
+        <div class="hab-col-1">
+          <section class="card">
+            <img src="assets/img/icones/HTML.png" alt="HTML" class="logo-habilidades" />
+            <p class="card-texto">HTML</p>
+          </section>
+          
+          <section class="card">
+            <img src="assets/img/icones/css.png" alt="CSS" class="logo-habilidades" />
+            <p class="card-texto">CSS</p>
+          </section>
+
+          <section class="card">
+            <img src="assets/img/icones/javascript.png" alt="JAVASCRIPT" class="logo-habilidades" />
+            <p class="card-texto">JAVASCRIPT</p>
+          </section>
+        </div>
+
+        <div class="hab-col-2">
+          <section class="card">
+            <img src="assets/img/icones/python.png" alt="Python" class="logo-habilidades" />
+            <p class="card-texto">Python</p>
+          </section>
+
+          <section class="card">
+            <img src="assets/img/icones/figma.png" alt="FIGMA" class="logo-habilidades" />
+            <p class="card-texto">FIGMA</p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" style="margin-top: 100px;">
+      <h2 class="titulo">Projetos</h2>
+      <div class="container-projetos">
+        <div class="card-projeto">
+          <img src="assets/img/icones/projetos/acai.png" alt="Projeto açai" />
+          <h3 class="projeto-titulo">Projeto Açaí</h3>
+          <p class="projeto-tech">
+            Tecnologias Usadas: <br><br>
+            <span>HTML, CSS</span>
+          </p>
+          <p class="projeto-desc">
+            Este é um projeto de uma loja de açaí desenvolvido para ser uma página estática.
+          </p>
+        </div>
+        <div class="card-projeto">
+          <img src="assets/img/icones/projetos/review.png" alt="Projeto Review" />
+          <h3 class="projeto-titulo">Projeto Review de Filmes</h3>
+          <p class="projeto-tech">
+            Tecnologias Usadas: <br><br>
+            <span>HTML, CSS</span>
+          </p>
+          <p class="projeto-desc">
+            Desenvolvi um site para mandarem informações sobre algum filme ou série específico.
+          </p>
+        </div>
+        <div class="card-projeto">
+          <img src="assets/img/icones/projetos/aprendendo.png" alt="Projeto aprendendo" />
+          <h3 class="projeto-titulo">Projeto Aprendendo HTML</h3>
+          <p class="projeto-tech">
+            Tecnologias Usadas: <br><br>
+            <span>HTML e CSS</span>
+          </p>
+          <p class="projeto-desc">
+            Este é um projeto web simples que utiliza HTML e CSS.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="fixed-buttons">
+      <a href="https://www.linkedin.com/in/pedro-azevedo-731697138" target="_blank" class="linkedin">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width: 24px" />
+      </a>
+      <a href="https://github.com/pedroaas1403" target="_blank" class="github">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" style="width: 24px" />
+      </a>
+      <a href="mailto:jclip2005@gmail.com" target="_blank" class="email">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" style="width: 24px" />
+      </a>
+    </div>
+
+    <section id="formulario">
+      <h2 class="titulo">Formulário de Contato</h2>
+      <form action="https://example.com/submit" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button type="submit" class="btn-inicio">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&COPY;2024 Pedro Azevedo. Todos os direitos reservados.</p>
+  </footer>
+  
+</body>
+</html>

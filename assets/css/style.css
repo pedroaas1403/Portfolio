@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-color: #0b0f20;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+main {
+    background-color: #0b0f20;
+}
+.titulo {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 39px;
+    margin-bottom: 60px;
+}
+.header {
+    background-color: #080b1a;
+    padding: 15px 0;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 90px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.logo:hover {
+    color: #4C8FF2;
+    transition: all 0.5s;
+}
+
+.menu-itens {
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-itens li {
+    list-style: none;
+}
+
+.menu-itens a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-itens a:hover {
+    color: #cecece;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.left,
+.right {
+    width: 50%;
+    padding: 20px;
+}
+
+.img-perfil {
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+}
+
+.img-perfil {
+    position: relative;
+    border-radius: 100%;
+}
+
+
+.inicio-titulo {
+    background: linear-gradient(45deg, #0053CE, #FFFFFF);
+    font-size: 50px;
+    margin: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.inicio-subtitulo {
+    color: #4C8FF2;
+    margin-bottom: 30px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.left h4 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.inicio-texto {
+    color: #fff;
+    text-align: justify;
+    margin: 40px 30px;
+    font-size: 16px;
+
+}
+
+.btn-inicio {
+    padding: 12px;
+    border-radius: 4px;
+    margin: 20px;
+    background-color: #324bda;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.btn-inicio:hover {
+    background-color: #6274d6;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 96px 15px;
+    justify-content: center;
+    margin: auto;
+    text-align: justify;
+    font-size: 16px;
+    background-color: #080b1a;
+}
+
+.sobre-texto {
+    color: #fff;
+    padding: 10px;
+    margin: 0 20%;
+
+}
+
+.sobre-graduacao {
+    color: #dfdfe0c5;
+}
+
+.sobre-graduacao::before {
+    content: "●";
+    margin-right: 5px;
+    color: #fff;
+}
+
+.habilidades {
+    padding: 96px 15px;
+}
+
+.container-cards {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.hab-col-1,
+.hab-col-2 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #080b1a;
+    width: 150px;
+    height: auto;
+    justify-self: center;
+    border-radius: 10px 0 10px 0;
+    box-shadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-out;
+    border: 1px solid #1f4b8e;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.logo-habilidades {
+    width: 70px;
+    display: block;
+    margin: 10px auto;
+}
+
+.card-texto {
+    color: #fff;
+    font-size: 14px;
+    margin: 15px 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+}
+
+.projetos {
+    background-color: #080b1a;
+    padding: 96px 15px;
+}
+
+.container-projetos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 50px;
+    flex-wrap: wrap;
+
+}
+
+.card-projeto {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 35%;
+    background-color: #0b0f20;
+    padding: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.img-projeto {
+    width: 100%;
+    height: auto;
+}
+
+.card-projeto img:hover {
+    opacity: 0.8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.projeto-titulo {
+    margin: 20px 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: #4C8FF2;
+}
+
+.projeto-desc {
+    font-weight: 500;
+    color: #fff;
+    text-align: justify;
+}
+
+.projeto-desc span {
+    color: #fff;
+}
+
+.fixed-buttons {
+    position: fixed;
+    top: 75%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.fixed-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 5px 10px;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.fixed-buttons a:hover {
+    opacity: 0.8;
+}
+
+.linkedin {
+    background-color: #ffffff;
+}
+
+.github {
+    background-color: #ffffff;
+}
+
+.whatsapp {
+    background-color: #25d366;
+}
+
+.email {
+    background-color: #d44638;
+}
+
+footer {
+    background-color: #0b0f20;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+}
+
+.nav {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.nav a {
+    padding: 15px;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: block;
+    font-size: 25px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.nav a:hover,
+.nav a:focus {
+    color: #cecece;
+}
+#formulario {
+    margin-top: 50px;
+    padding: 20px;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#nome, #email,#telefone, textarea {
+    background-color: #1a1f3b;
+    color: #fff;
+}
+@media (max-width: 400px) {
+    .habilidades {
+        padding: 96px 0;
+        margin: 0 10px;
+    }
+
+    .card {
+        width: 120px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    header {
+        display: none;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .btn-inicio {
+        margin: 20px auto;
+        width: 95%;
+    }
+    .left,
+    .right {
+        width: 100%;
+    }
+    .sobre-texto {
+        margin: auto;
+    }
+    .btn-inicio {
+        display: block;
+    }
+    .habilidades {
+        display: flex;
+        flex-direction: column;
+        padding: 96px 0;
+        margin: 0 10px;
+    }
+    .container-projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-projeto {
+        width: 100%;
+    }
+}
+@media (min-width: 1400px) {
+    .inicio-texto {
+        margin: 40px 200px;
+    }
+}
